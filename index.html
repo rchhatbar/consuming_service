@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Angular JS</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js">
+
+    </script>
+    <script src="../Module/module.js"></script>
+    <script src="../Controller/Controller.js"></script>
+</head>
+<body>
+    <div ng-app="mainApp" ng-controller="nameCtrl">
+        <p ng-repeat="item in GetCategoryResult">
+            {{item.category_name}}
+        </p>
+
+
+    </div>
+
+</body>
+</html>
